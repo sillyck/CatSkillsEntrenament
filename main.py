@@ -1,8 +1,8 @@
 from serial import Serial
 
 Robot = Serial("COM4", 115200, timeout=.1)
-Robot.flushInput() # Eliminar buffer salida
-Robot.flushOutput() # Eliminar buffer entrada
+Robot.flushInput() # Eliminar buffer d'entrada
+Robot.flushOutput() # Eliminar buffer de sortida
 
 endavant = "cmd_vel[0.1,0,0]"
 endarrere = "cmd_vel[0.1,0,0]"
