@@ -1,6 +1,6 @@
 from serial import Serial
 
-Robot = Serial("COM4", 115200, timeout=.1)
+Robot = Serial("COM4", 9600, timeout=.1)
 
 Robot.flushInput() # Eliminar buffer d'entrada
 Robot.flushOutput() # Eliminar buffer de sortida
